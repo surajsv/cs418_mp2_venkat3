@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		252F6D1C1C8CFF75007B95CB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 252F6D1B1C8CFF75007B95CB /* main.cpp */; };
+		252F6D231C8CFFB0007B95CB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252F6D221C8CFFB0007B95CB /* GLUT.framework */; };
+		252F6D251C8CFFB7007B95CB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252F6D241C8CFFB7007B95CB /* OpenGL.framework */; };
+		252F6D271C8CFFBD007B95CB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252F6D261C8CFFBD007B95CB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,10 @@
 /* Begin PBXFileReference section */
 		252F6D181C8CFF75007B95CB /* MP2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MP2; sourceTree = BUILT_PRODUCTS_DIR; };
 		252F6D1B1C8CFF75007B95CB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		252F6D221C8CFFB0007B95CB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		252F6D241C8CFFB7007B95CB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		252F6D261C8CFFBD007B95CB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		25EF0B6D1C8EFD6F005981F8 /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; name = glm; path = "../../Documents/New Downloads/glm"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252F6D271C8CFFBD007B95CB /* Cocoa.framework in Frameworks */,
+				252F6D251C8CFFB7007B95CB /* OpenGL.framework in Frameworks */,
+				252F6D231C8CFFB0007B95CB /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +51,10 @@
 		252F6D0F1C8CFF74007B95CB = {
 			isa = PBXGroup;
 			children = (
+				25EF0B6D1C8EFD6F005981F8 /* glm */,
+				252F6D261C8CFFBD007B95CB /* Cocoa.framework */,
+				252F6D241C8CFFB7007B95CB /* OpenGL.framework */,
+				252F6D221C8CFFB0007B95CB /* GLUT.framework */,
 				252F6D1A1C8CFF75007B95CB /* MP2 */,
 				252F6D191C8CFF75007B95CB /* Products */,
 			);
@@ -88,6 +102,9 @@
 		252F6D101C8CFF74007B95CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Suraj Venkat";
 				TargetAttributes = {
@@ -207,6 +224,7 @@
 		252F6D201C8CFF75007B95CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "/Users/surajsv/Documents/New\\ Download/glm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +232,7 @@
 		252F6D211C8CFF75007B95CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "/Users/surajsv/Documents/New\\ Download/glm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -237,6 +256,7 @@
 				252F6D211C8CFF75007B95CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
